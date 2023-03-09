@@ -66,6 +66,7 @@ function Romance({userId, setUserId}) {
                                     value={phoneNumber}
                                     onChange={(e) => setPhoneNumber(e.target.value)}
                                     placeholder=""
+                                    inputmode="numeric"
                                     required
                                     />
                             </div>
