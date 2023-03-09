@@ -1,0 +1,129 @@
+@import '/breakpoints';
+
+    .prelander{
+        position: relative;
+           
+             .hello-img{
+                 position: absolute;
+                 top: 3%;
+                 left: 17%;
+                 z-index: 10;
+             }
+             
+             .section-container{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                
+                .content-container{
+                    max-width: 1400px;
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 3.75rem;
+                    width: 100%;
+                    z-index: 3;
+
+                    .content-img{
+                        width: 135px;
+                        position: absolute;
+                        top: 4.5%;
+                        right: 25%;
+                        z-index: 10;
+                    }
+          
+                    .content{
+                        padding: 2.5rem 2rem;
+                        background-color: white;
+                        text-align: center;
+                        width: 80%;
+                        height: auto;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        z-index: 4;
+                        
+                       .title{                   
+                            margin-bottom: 1rem;
+                            position: relative;
+        
+                            span{
+                                font-weight: 900;
+                            }
+        
+                            .featured-text{
+                                color: #59BBA6 ;
+                            }
+        
+                            p{
+                                font-size: 18px;
+                                font-weight: 300;
+                            }
+        
+                        }
+                        p{
+                            font-size: 12px;
+                        }
+
+                        .btn-container{                 
+                            margin-top: 1rem;                        
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            
+                            
+                            .btn{
+                               padding: 0.5rem 0.5rem;
+                               text-decoration: none; 
+                            }
+                        }
+                        
+                    }
+                }
+             }
+     }
+  
+@media screen and (min-width: $tablet) {
+    .prelander{
+        .relative-container{
+            position: relative;
+
+            .hello-img{
+               top: 0
+            }
+
+            .section-container{
+               gap: 2rem;
+               margin-top: 2rem;
+
+               .content-container{
+                   .content-img{
+                       top: 0;
+                   }
+                   .content{
+                        .title{                   
+                           p{
+                               font-size: 24px;
+                           }
+                        }
+
+                       p{
+                         font-size: 16px;
+                       }
+
+                       .btn-container{                 
+                           gap: 2rem ;
+                           flex-direction: row;
+                       } 
+                   }
+               }
+            }
+        }   
+     }
+  }
+
+  
+  
+  
+  
+  
+    

@@ -1,0 +1,51 @@
+@import '/breakpoints';
+
+.layout{
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: #59BBA6;
+    margin: 0;
+    padding: 0;
+    z-index: -1;
+
+    .bg-image-container{
+        min-height:180px;
+        height: auto;
+        position: relative;
+       
+        .bg-image{
+            max-width: 100vw;
+            transform: scale(1.65);
+            transform-origin: top center;
+            height: auto;
+            position: absolute;
+            left: 8% ;
+            top: 0;
+            z-index: 1;
+        }
+        
+        .donut{
+            position: absolute;
+            top: 37%;
+            right: -8%;
+            z-index: 11;  
+        }   
+    }
+}
+
+@media screen and (min-width: $tablet) {
+    .layout{
+        .bg-image-container{ 
+            .donut{
+                top: 45%;
+                right: 7%;
+            } 
+        }
+    }
+  }
+
+  
+
+ 
+
+

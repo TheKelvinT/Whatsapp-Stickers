@@ -1,0 +1,52 @@
+@import '/breakpoints';
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 7px;
+    
+   .header-one{
+      height: 72px;
+      margin-top: 3px;
+   }
+
+   .header-two{
+      height: 56px;
+      width: 56px;
+   }
+
+   .header-three{
+      height: 56px;
+      width: 45px;
+   }
+   .header-container{
+      padding: auto;
+      z-index: 2;
+   }
+}
+
+@media screen and (min-width: $tablet) {
+    .header{
+      padding: 1rem 1rem;  
+       
+      .header-one{
+        height: 108px;
+      }
+      .header-two{
+        height: 112px;
+        width: 112px;
+      }
+      .header-three{
+        height: 112px;
+        width: 90px;
+      }
+    }
+  }
+  
+
+
+  
+
+
+

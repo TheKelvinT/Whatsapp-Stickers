@@ -1,0 +1,60 @@
+@import '/breakpoints';
+.reviews{
+    padding: 0.5rem ;
+    
+    .container{
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        background-color: #319379;
+        box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.4);
+        margin: 0 0.5rem;
+        .left{
+            padding-right: 1rem; 
+        }
+        .right{
+            p{
+                font-size: 16px;
+                color: white;
+            }
+
+            .rating{
+                display: flex;
+                gap: 1rem;
+            }
+
+            .name{
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: $tablet) {
+    .reviews{
+        .container{
+            padding: 1.5rem;
+
+            .left{
+                padding-right: 2rem; 
+            }
+
+            .right{
+                p{
+                    margin-bottom: .5rem;
+                }
+
+                .rating{
+                    img{
+                        transform: scale(1.25);
+                    }
+                }
+                
+                .name{
+                    margin-top: .5rem;
+                }
+                
+            }
+        }
+    }
+  }

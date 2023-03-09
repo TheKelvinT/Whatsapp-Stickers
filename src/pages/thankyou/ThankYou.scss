@@ -1,0 +1,94 @@
+@import '/breakpoints';
+
+.thank-you{
+    position: relative;
+    
+    .section-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+   
+        .content-container{
+            display: flex;
+            max-width: 1400px ;
+            justify-content: center;
+            margin-top: 3.75rem;
+            width: 100vw;
+            z-index: 3;
+           
+            .content-img-container{
+               .content-img{
+                   width: 135px;
+                   position: absolute;
+                   top: 10%;
+                   left: 50%;
+                   transform: translateX(-50%);
+                   z-index: 10;            
+               }
+            }
+
+            .content{
+                min-height: 150px ;
+                padding: 6rem 1rem 1rem 1rem ;
+                background-color: white;
+                text-align: center;
+                width: 82%;
+                height: auto;
+                top: 35%;
+                left: 10%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                z-index: 4;
+                
+               .title{                   
+                    margin-bottom: 0.7rem;
+                    position: relative;
+
+                    p{
+                        font-size: 17px;
+                        font-weight: 400;
+                    }    
+                }
+                .desc{
+                   font-size: 12px;
+                   max-width: 196px;
+                   line-height: 1rem;
+                }
+        }
+    
+        }
+    }     
+}
+
+@media screen and (min-width: $tablet) {
+    .thank-you{
+        .section-container{      
+            gap: 2rem;
+            .content-container{                       
+                .content-img-container{                   
+                   .content-img{              
+                       top: 18%;                           
+                   }
+                }                  
+                .content{              
+                    padding: 6rem 1rem 3rem 1rem ;              
+                    
+                   .title{                   
+                        margin-bottom: 1.5rem;                     
+   
+                        p{
+                            font-size: 32px;
+                            font-weight: 900;
+                        }    
+                    }
+                    .desc{
+                       font-size: 24px;
+                       max-width: 480px;
+                       line-height: 2rem;
+                    }
+                }
+            }
+        }        
+    }
+  }

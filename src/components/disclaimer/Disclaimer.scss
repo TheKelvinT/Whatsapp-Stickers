@@ -1,0 +1,32 @@
+@import '/breakpoints';
+
+.disclaimer{
+    color: white;
+    padding: 0.5rem ;
+
+    .container{
+        max-width: 600px;
+        padding: 0.75rem ;
+        font-size: 10px;
+        text-align: center;
+        line-height: 1.25rem;
+    }
+}
+
+@media screen and (min-width: $tablet) {
+    .disclaimer{
+        padding: 1.5rem;
+
+        .container{
+            max-width: 1400px;
+            margin: auto;
+            width: 80%;
+            padding: 1rem 1rem;
+            font-size: 16px;
+            line-height: 1.5rem;
+            background-color: #319379;
+            box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.4);
+        }
+    }
+  }
+

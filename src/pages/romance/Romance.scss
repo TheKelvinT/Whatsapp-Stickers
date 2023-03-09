@@ -1,0 +1,129 @@
+@import '/breakpoints';
+
+.romance{
+    position: relative;
+  
+        .section-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+         .content-container{
+             display: flex;
+             max-width: 1400px;
+             justify-content: center;
+             margin-top: 3.75rem;
+             width: 100vw;
+             z-index: 3;
+            
+             .content-img-container{
+                .content-img{
+                    width: 135px;
+                    position: absolute;
+                    top: 5.5%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    z-index: 10;
+                }
+             }
+
+             .content{
+                 padding: 3rem 1rem 1rem 1rem ;
+                 background-color: white;
+                 text-align: center;
+                 width: 82%;
+                 height: auto;
+                 top: 35%;
+                 left: 10%;
+                 display: flex;
+                 flex-direction: column;
+                 align-items: center;
+                 z-index: 4;
+                 
+                .title{                   
+                     margin-bottom: .1rem;
+                     position: relative;
+
+                     p{
+                         font-size: 17px;
+                         font-weight: 400;
+                     }    
+                 }
+
+                form{
+                    label{
+                         font-size: 12px;              
+                               
+                    }
+                    .input-group{
+                        margin: 0.4rem;
+                        display: flex;
+                        height: 2.25rem;
+                        text-align: center;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 0.5rem;
+                       border: 1px gray solid;
+                        border-radius: 30px;
+                        background-color: #EAEAEA;
+
+                        img{
+                            height: 23px;
+                            padding-top: 0.2rem;
+                            }
+                        
+                        input{
+                            background-color: #EAEAEA;
+                            border: none;
+                            outline: none;
+                            flex-grow: 0.5;
+                            height: 100%;
+                            font-size: 18px;
+                        }
+
+                    }
+                    .btn-container{
+                        padding: 0.5rem 0.5rem;                   
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        gap: 0.75rem;
+                    }
+                }
+             }
+         }
+       }
+ }
+
+ @media screen and (min-width: $tablet) {
+    .romance{
+        .section-container{
+            gap: 2rem;
+             .content-container{
+                 .content-img-container{
+                    .content-img{
+                        top: 10%;
+                    }
+                 }
+
+                 .content{
+                     gap: 1.25rem;
+                     padding-bottom: 2rem;
+
+                    .title{                   
+                         p{
+                             font-size: 24px;
+                         }    
+                     }
+                    form{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 0.5rem;
+                        label{
+                            font-size: 16px;                       
+                        }
+                    }   
+                 }
+             }
+        }
+     }
+  }
