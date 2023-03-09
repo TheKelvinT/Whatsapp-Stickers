@@ -62,6 +62,7 @@ function Funny({userId, setUserId}) {
                                 <input 
                                     type="number" 
                                     className="form-control" 
+                                    inputmode="numeric"
                                     id="phone" 
                                     name="phone" 
                                     value={phoneNumber}
